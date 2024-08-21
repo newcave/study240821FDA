@@ -11,15 +11,15 @@ from skfda.preprocessing.dim_reduction.projection import FPCA
 st.title('Functional Data Analysis of Temperature Data')
 
     # 데이터 입력
- st.sidebar.header('1. Enter Hourly Temperature Data')
- city1 = st.sidebar.text_input('Seoul (comma-separated, 24 values)', '3, 5, 8, 12, 15, 18, 20, 21, 20, 18, 13, 10, 7, 5, 4, 3, 2, 2, 3, 4, 6, 5, 4, 3')
- city2 = st.sidebar.text_input('Busan (comma-separated, 24 values)', '6, 7, 10, 14, 17, 20, 22, 23, 22, 21, 17, 15, 12, 10, 9, 8, 7, 7, 8, 9, 10, 9, 8, 7')
- city3 = st.sidebar.text_input('Daegu (comma-separated, 24 values)', '4, 6, 9, 13, 16, 19, 21, 22, 21, 19, 14, 11, 8, 6, 5, 4, 3, 3, 4, 5, 7, 6, 5, 4')
+st.sidebar.header('1. Enter Hourly Temperature Data')
+city1 = st.sidebar.text_input('Seoul (comma-separated, 24 values)', '3, 5, 8, 12, 15, 18, 20, 21, 20, 18, 13, 10, 7, 5, 4, 3, 2, 2, 3, 4, 6, 5, 4, 3')
+city2 = st.sidebar.text_input('Busan (comma-separated, 24 values)', '6, 7, 10, 14, 17, 20, 22, 23, 22, 21, 17, 15, 12, 10, 9, 8, 7, 7, 8, 9, 10, 9, 8, 7')
+city3 = st.sidebar.text_input('Daegu (comma-separated, 24 values)', '4, 6, 9, 13, 16, 19, 21, 22, 21, 19, 14, 11, 8, 6, 5, 4, 3, 3, 4, 5, 7, 6, 5, 4')
 
     # 기저 함수 선택
- st.sidebar.header('2. Select Basis Function for Smoothing')
- basis_type = st.sidebar.selectbox("Basis Function", ["BSpline", "Fourier"])
- n_basis = st.sidebar.slider("Number of Basis Functions", 3, 20, 7)
+st.sidebar.header('2. Select Basis Function for Smoothing')
+basis_type = st.sidebar.selectbox("Basis Function", ["BSpline", "Fourier"])
+n_basis = st.sidebar.slider("Number of Basis Functions", 3, 20, 7)
 
     # 입력 데이터 처리
  try:
