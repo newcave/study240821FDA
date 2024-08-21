@@ -8,7 +8,7 @@ from skfda.exploratory.stats import mean
 from skfda.preprocessing.dim_reduction.projection import FPCA
 
 
-    st.title('Functional Data Analysis of Temperature Data')
+st.title('Functional Data Analysis of Temperature Data')
 
     # 데이터 입력
     st.sidebar.header('1. Enter Hourly Temperature Data')
