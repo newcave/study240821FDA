@@ -7,7 +7,7 @@ from skfda.representation.basis import BSpline, Fourier
 from skfda.exploratory.stats import mean
 from skfda.preprocessing.dim_reduction.projection import FPCA
 
-def main():
+
     st.title('Functional Data Analysis of Temperature Data')
 
     # 데이터 입력
@@ -53,5 +53,4 @@ def main():
     except Exception as e:
         st.sidebar.error('Please make sure the input format is correct.')
 
-if __name__ == "__main__":
-    main()
+
