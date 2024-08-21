@@ -22,7 +22,7 @@ basis_type = st.sidebar.selectbox("Basis Function", ["BSpline", "Fourier"])
 n_basis = st.sidebar.slider("Number of Basis Functions", 3, 20, 7)
 
     # 입력 데이터 처리
- try:
+try:
      data_seoul = np.array(list(map(float, city1.split(','))))
      data_busan = np.array(list(map(float, city2.split(','))))
      data_daegu = np.array(list(map(float, city3.split(','))))
@@ -50,7 +50,7 @@ n_basis = st.sidebar.slider("Number of Basis Functions", 3, 20, 7)
      plt.ylabel('Temperature')
      plt.legend()
      st.pyplot(plt)
- except Exception as e:
+except Exception as e:
      st.sidebar.error('Please make sure the input format is correct.')
 
 #EOF
